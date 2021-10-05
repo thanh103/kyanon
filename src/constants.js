@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const employees = [
   {
     key: "1",
@@ -42,6 +44,7 @@ export const columns = [
     title: "Name",
     dataIndex: "name",
     key: "name",
+    render: (text, user) => <Link to={`/users/${user.id}`}>{text}</Link>,
   },
   {
     title: "EmployeeID",

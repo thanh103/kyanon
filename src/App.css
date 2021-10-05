@@ -155,3 +155,9 @@ button {
   width: 70%;
   padding-left: 50px;
 }
+.link {
+  color: black;
+}
+.link:hover {
+  color: #9254de;
+}
